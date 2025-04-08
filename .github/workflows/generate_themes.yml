@@ -27,6 +27,7 @@ jobs:
             if [-z "$(git status --porcelain)" ]; then
               echo "No changes, success"
               exit 0
+            fi
         - name: "Commit changed files"
           run: git commit -m "Autogenerating CSS"
         - name: "Push changes"

@@ -1,0 +1,26 @@
+name: generate themes on push
+run-name: generate themes (triggered by ${{ github.actor }})
+
+on: 
+  push:
+    branches: [main]
+    
+jobs:
+  gen-themes:
+    runs-on: windows-latest
+    steps:
+        - uses: actions/checkout@v4
+        - name: "Generate CSS files"
+          run: python ./generate.py
+        - name: "switching from HTTPS to SSH"
+          run: git remote set-url origin ${{ secrets.ssh }}
+        - name: "Check for changes"
+          run: git status
+        - name: "Stage changed files"
+          run: git add .
+        - name: "Commit changed files"
+          run: git commit -m "Autogenerating CSS"
+        - name: "Fetch from main"
+          run: git fetch origin masin
+        - name: "Push to main"
+          run: git push origin HEAD:main

@@ -7,7 +7,9 @@ on:
     
 jobs:
   gen-themes:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
         - uses: actions/checkout@v4
         - name: "Generate CSS files"
@@ -20,6 +22,11 @@ jobs:
           run: git status
         - name: "Stage changed files"
           run: git add .
+        - name: "Check for changes"
+          run: |
+            if [-z "$(git status --porcelain)" ]; then
+              echo "No changes, success"
+              exit 0
         - name: "Commit changed files"
           run: git commit -m "Autogenerating CSS"
         - name: "Push changes"

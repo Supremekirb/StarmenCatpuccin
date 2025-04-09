@@ -33,7 +33,7 @@
 	--news-post-link-color-visited: var(--ctp-mocha-blue);
 	
 	/* ------- Tabs & buttons --------- */
-	--tab-bg-color: var(--ctp-mocha-crust);
+	--tab-bg-color: var(--ctp-mocha-mantle);
 	--tab-text-color: var(--ctp-mocha-subtext1);
 	--tab-bg-color-hover: var(--ctp-mocha-surface1);
 	--tab-text-color-hover: var(--ctp-mocha-text);

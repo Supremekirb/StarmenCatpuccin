@@ -33,7 +33,7 @@
 	--news-post-link-color-visited: var(--ctp-frappe-blue);
 	
 	/* ------- Tabs & buttons --------- */
-	--tab-bg-color: var(--ctp-frappe-crust);
+	--tab-bg-color: var(--ctp-frappe-mantle);
 	--tab-text-color: var(--ctp-frappe-subtext1);
 	--tab-bg-color-hover: var(--ctp-frappe-surface1);
 	--tab-text-color-hover: var(--ctp-frappe-text);

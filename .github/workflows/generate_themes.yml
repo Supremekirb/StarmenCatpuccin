@@ -22,16 +22,14 @@ jobs:
           run: git status
         - name: "Stage changed files"
           run: git add .
-        - name: "Check for changes"
+        - name: "Commit (if any changes to CSS)"
           run: |
             if [ -z "$(git status --porcelain)" ]; then
               echo "No changes, success"
-              exit 0
+              exit 0 
             fi
-        - name: "Commit changed files"
-          run: git commit -m "Autogenerating CSS"
-        - name: "Push changes"
+            git commit -m "Autogenerating CSS"
+        - name: "Push changes (if any)"
           uses: ad-m/github-push-action@master
           with:
             github_token: ${{ secrets.GITHUB_TOKEN }}
-            force: true

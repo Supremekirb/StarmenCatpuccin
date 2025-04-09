@@ -33,7 +33,7 @@
 	--news-post-link-color-visited: var(--ctp-CTPTHEME-blue);
 	
 	/* ------- Tabs & buttons --------- */
-	--tab-bg-color: var(--ctp-CTPTHEME-crust);
+	--tab-bg-color: var(--ctp-CTPTHEME-mantle);
 	--tab-text-color: var(--ctp-CTPTHEME-subtext1);
 	--tab-bg-color-hover: var(--ctp-CTPTHEME-surface1);
 	--tab-text-color-hover: var(--ctp-CTPTHEME-text);

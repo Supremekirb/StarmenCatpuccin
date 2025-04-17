@@ -1,4 +1,4 @@
-@import url('https://cdn.jsdelivr.net/npm/@catppuccin/palette/css/catppuccin.css');
+@import url('https://ssl-forum-files.fobby.net/forum_attachments/0050/2042/catppuccin.css');
 :root {
 	/* --------- Basic ------------- */
 	--background-color: var(--ctp-latte-mantle);
@@ -17,7 +17,7 @@
 
 	/* ------- Header ----------- */
 	--header-bg-color: var(--ctp-latte-crust);
-	--header-bg-image: url("https://raw.githubusercontent.com/Supremekirb/StarmenCatpuccin/refs/heads/main/img/lattebg.png");
+	--header-bg-image: url("https://ssl-forum-files.fobby.net/forum_attachments/0050/2033/lattebg.png");
 	
 	/* ------- Sidebar ----------- */
     --sidebar-bg-color: var(--ctp-latte-surface0);

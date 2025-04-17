@@ -2,8 +2,7 @@ name: generate themes on push
 run-name: generate themes (triggered by ${{ github.actor }})
 
 on: 
-  push:
-    branches: [main]
+  push
     
 jobs:
   gen-themes:
